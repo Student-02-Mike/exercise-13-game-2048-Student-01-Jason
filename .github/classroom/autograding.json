@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "setup",
+      "setup": "install setuptools",
+      "run": "sudo apt-get install python3-setuptools",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "behave",
+      "setup": "sudo -H pip3 install behave",
+      "run": "behave",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    },
+    {
+      "name": "pytest",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}
